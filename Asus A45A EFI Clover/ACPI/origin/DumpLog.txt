@@ -1,0 +1,113 @@
+11:145  9:460  Found BIOS RSDP at F0000
+11:145  0:000  Printing ACPI tables from RSDP F0000 ...
+11:145  0:000   F0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:145  0:000    (Xsdt: D8CB0080, Rsdt: D8CB0028)
+11:145  0:000    D8CB0080: 'XSDT', 'Notebook', Rev: 1, Len: 132
+11:145  0:000    D8CB0028: 'RSDT', 'Notebook', Rev: 1, Len: 76
+11:145  0:000    Tables in Xsdt: 12
+11:145  0:000    0. D8CBF290: 'FACP', 'Notebook', Rev: 5, Len: 268
+11:145  0:000        (Dsdt: D8CB01A0, Facs: D90FD080, XDsdt: D8CB01A0, XFacs: 0)
+11:145  0:000        D8CB01A0: 'DSDT', 'Notebook', Rev: 2, Len: 61678
+11:147  0:001        D90FD080: 'FACS', Ver: 2, Len: 64
+11:147  0:000    1. D8CBF3A0: 'APIC', 'Notebook', Rev: 3, Len: 114
+11:147  0:000    2. D8CBF418: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:147  0:000    3. D8CBF460: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:147  0:000    4. D8CBF4A0: 'SSDT', 'PtidDevc', Rev: 1, Len: 1769
+11:147  0:000    5. D8CBFB90: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:147  0:000    6. D8CBFBC8: 'SSDT', 'SataTabl', Rev: 1, Len: 834
+11:147  0:000    7. D8CBFF10: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2408
+11:147  0:000    8. D8CC0878: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+11:147  0:000    9. D8CC1310: 'BGRT', 'Notebook', Rev: 0, Len: 56
+11:147  0:000    10. D8CC1348: 'SSDT', 'SgTabl', Rev: 1, Len: 1910
+11:147  0:000    11. D8CC1AC0: 'SLIC', 'Notebook', Rev: 1, Len: 374
+11:147  0:000    Tables in Rsdt: 10
+11:147  0:000    0. D8CB0118: 'FACP', 'Notebook', Rev: 2, Len: 132
+11:147  0:000        (Dsdt: D8CB01A0, Facs: D90FD040)
+11:147  0:000        D8CB01A0: 'DSDT', 'Notebook', Rev: 2, Len: 61678
+11:148  0:001        D90FD040: 'FACS', Ver: 0, Len: 64
+11:148  0:000    1. D8CBF3A0: 'APIC', 'Notebook', Rev: 3, Len: 114
+11:148  0:000    2. D8CBF418: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:148  0:000    3. D8CBF460: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:148  0:000    4. D8CBF4A0: 'SSDT', 'PtidDevc', Rev: 1, Len: 1769
+11:148  0:000    5. D8CBFB90: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:148  0:000    6. D8CBFBC8: 'SSDT', 'SataTabl', Rev: 1, Len: 834
+11:148  0:000    7. D8CBFF10: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2408
+11:148  0:000    8. D8CC0878: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+11:148  0:000    9. D8CC1310: 'BGRT', 'Notebook', Rev: 0, Len: 56
+11:148  0:000  Found UEFI Acpi 2.0 RSDP at D8CB0000
+11:148  0:000  Saving ACPI tables from RSDP D8CB0000 to EFI\CLOVER\ACPI\origin ...
+11:148  0:000   D8CB0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+11:212  0:063    (Xsdt: D8CB0080, Rsdt: D8CB0028)
+11:212  0:000    D8CB0080: 'XSDT', 'Notebook', Rev: 1, Len: 132 -> XSDT.aml
+11:216  0:003    D8CB0028: 'RSDT', 'Notebook', Rev: 1, Len: 76 -> RSDT.aml
+11:219  0:003    Tables in Xsdt: 12
+11:219  0:000    0. D8CBF290: 'FACP', 'Notebook', Rev: 5, Len: 268 -> FACP.aml
+11:223  0:003        (Dsdt: D8CB01A0, Facs: D90FD080, XDsdt: D8CB01A0, XFacs: 0)
+11:223  0:000        D8CB01A0: 'DSDT', 'Notebook', Rev: 2, Len: 61678 -> DSDT.aml
+11:230  0:007        D90FD080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+11:234  0:003    1. D8CBF3A0: 'APIC', 'Notebook', Rev: 3, Len: 114 -> APIC.aml
+11:238  0:003    2. D8CBF418: 'FPDT', 'Notebook', Rev: 1, Len: 68 -> FPDT.aml
+11:259  0:021    3. D8CBF460: 'MCFG', 'Notebook', Rev: 1, Len: 60 -> MCFG.aml
+11:263  0:003    4. D8CBF4A0: 'SSDT', 'PtidDevc', Rev: 1, Len: 1769 -> SSDT-0-PtidDevc.aml
+11:266  0:003    5. D8CBFB90: 'HPET', 'Notebook', Rev: 1, Len: 56 -> HPET.aml
+11:270  0:003    6. D8CBFBC8: 'SSDT', 'SataTabl', Rev: 1, Len: 834 -> SSDT-1-SataTabl.aml
+11:273  0:003    7. D8CBFF10: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2408 -> SSDT-2-Cpu0Ist.aml
+11:277  0:003    8. D8CC0878: 'SSDT', 'CpuPm', Rev: 1, Len: 2706 -> SSDT-3-CpuPm.aml (Found hidden SSDT 4 pcs)
+11:281  0:004        * D72AD018: 'SSDT', 'CpuPm', Rev: 1, Len: 2706  53 53 44 54 92 0A 00 00 01 E6 50 6D 52 65 66 00 Internal length = 2706 -> SSDT-x3_0-CpuPm.aml
+11:285  0:003        * D8A48A98: 'SSDT', 'ApIst', Rev: 1, Len: 771  53 53 44 54 03 03 00 00 01 76 50 6D 52 65 66 00 Internal length = 771 -> SSDT-x3_1-ApIst.aml
+11:288  0:003        * D8A47018: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 2107  53 53 44 54 3B 08 00 00 01 D8 50 6D 52 65 66 00 Internal length = 2107 -> SSDT-x3_2-Cpu0Cst.aml
+11:292  0:003        * D8A49C18: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 EC 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x3_3-ApCst.aml
+11:295  0:003  
+11:295  0:000    9. D8CC1310: 'BGRT', 'Notebook', Rev: 0, Len: 56 -> BGRT.aml
+11:300  0:004    10. D8CC1348: 'SSDT', 'SgTabl', Rev: 1, Len: 1910 -> SSDT-4-SgTabl.aml
+11:304  0:004    11. D8CC1AC0: 'SLIC', 'Notebook', Rev: 1, Len: 374 -> SLIC.aml
+11:308  0:003    Tables in Rsdt: 10
+11:308  0:000    0. D8CB0118: 'FACP', 'Notebook', Rev: 2, Len: 132 -> RSDT-FACP.aml
+11:311  0:003        (Dsdt: D8CB01A0, Facs: D90FD040)
+11:311  0:000        D8CB01A0: 'DSDT', 'Notebook', Rev: 2, Len: 61678
+11:313  0:001        D90FD040: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+11:316  0:003    1. D8CBF3A0: 'APIC', 'Notebook', Rev: 3, Len: 114
+11:316  0:000    2. D8CBF418: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:316  0:000    3. D8CBF460: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:316  0:000    4. D8CBF4A0: 'SSDT', 'PtidDevc', Rev: 1, Len: 1769
+11:316  0:000    5. D8CBFB90: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:316  0:000    6. D8CBFBC8: 'SSDT', 'SataTabl', Rev: 1, Len: 834
+11:316  0:000    7. D8CBFF10: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2408
+11:316  0:000    8. D8CC0878: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+11:316  0:000    9. D8CC1310: 'BGRT', 'Notebook', Rev: 0, Len: 56
+11:316  0:000  Found UEFI Acpi 1.0 RSDP at D8CB0000
+11:316  0:000  Printing ACPI tables from RSDP D8CB0000 ...
+11:316  0:000   D8CB0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:316  0:000    (Xsdt: D8CB0080, Rsdt: D8CB0028)
+11:316  0:000    D8CB0080: 'XSDT', 'Notebook', Rev: 1, Len: 132
+11:316  0:000    D8CB0028: 'RSDT', 'Notebook', Rev: 1, Len: 76
+11:316  0:000    Tables in Xsdt: 12
+11:316  0:000    0. D8CBF290: 'FACP', 'Notebook', Rev: 5, Len: 268
+11:316  0:000        (Dsdt: D8CB01A0, Facs: D90FD080, XDsdt: D8CB01A0, XFacs: 0)
+11:316  0:000        D8CB01A0: 'DSDT', 'Notebook', Rev: 2, Len: 61678
+11:318  0:001        D90FD080: 'FACS', Ver: 2, Len: 64
+11:318  0:000    1. D8CBF3A0: 'APIC', 'Notebook', Rev: 3, Len: 114
+11:318  0:000    2. D8CBF418: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:318  0:000    3. D8CBF460: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:318  0:000    4. D8CBF4A0: 'SSDT', 'PtidDevc', Rev: 1, Len: 1769
+11:318  0:000    5. D8CBFB90: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:318  0:000    6. D8CBFBC8: 'SSDT', 'SataTabl', Rev: 1, Len: 834
+11:318  0:000    7. D8CBFF10: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2408
+11:318  0:000    8. D8CC0878: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+11:318  0:000    9. D8CC1310: 'BGRT', 'Notebook', Rev: 0, Len: 56
+11:318  0:000    10. D8CC1348: 'SSDT', 'SgTabl', Rev: 1, Len: 1910
+11:318  0:000    11. D8CC1AC0: 'SLIC', 'Notebook', Rev: 1, Len: 374
+11:318  0:000    Tables in Rsdt: 10
+11:318  0:000    0. D8CB0118: 'FACP', 'Notebook', Rev: 2, Len: 132
+11:318  0:000        (Dsdt: D8CB01A0, Facs: D90FD040)
+11:318  0:000        D8CB01A0: 'DSDT', 'Notebook', Rev: 2, Len: 61678
+11:320  0:001        D90FD040: 'FACS', Ver: 0, Len: 64
+11:320  0:000    1. D8CBF3A0: 'APIC', 'Notebook', Rev: 3, Len: 114
+11:320  0:000    2. D8CBF418: 'FPDT', 'Notebook', Rev: 1, Len: 68
+11:320  0:000    3. D8CBF460: 'MCFG', 'Notebook', Rev: 1, Len: 60
+11:320  0:000    4. D8CBF4A0: 'SSDT', 'PtidDevc', Rev: 1, Len: 1769
+11:320  0:000    5. D8CBFB90: 'HPET', 'Notebook', Rev: 1, Len: 56
+11:320  0:000    6. D8CBFBC8: 'SSDT', 'SataTabl', Rev: 1, Len: 834
+11:320  0:000    7. D8CBFF10: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2408
+11:320  0:000    8. D8CC0878: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+11:320  0:000    9. D8CC1310: 'BGRT', 'Notebook', Rev: 0, Len: 56
