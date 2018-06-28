@@ -899,11 +899,11 @@
 						<key>ELANv3</key>
 						<integer>55</integer>
 						<key>ELANv4</key>
-						<integer>45</integer>
+						<integer>55</integer>
 						<key>ELANv4ClickPad</key>
-						<integer>25</integer>
+						<integer>55</integer>
 						<key>FocalTech</key>
-						<integer>25</integer>
+						<integer>55</integer>
 						<key>Synaptics</key>
 						<integer>65</integer>
 						<key>SynapticsClickPad</key>
@@ -940,9 +940,9 @@
 					<key>TapEnablesTPadFromAccInput</key>
 					<false/>
 					<key>TimeOutEnablesTPadAfterAccInput</key>
-					<integer>1000</integer>
+					<integer>1250</integer>
 					<key>TriggerAccInputForKeyPressCount</key>
-					<integer>2</integer>
+					<integer>1</integer>
 				</dict>
 				<key>Mouse</key>
 				<dict>
@@ -960,7 +960,7 @@
 					<key>5FingersPinchAction</key>
 					<integer>3</integer>
 					<key>CircularRotate</key>
-					<true/>
+					<false/>
 					<key>DisableTPadOnLIDClose</key>
 					<true/>
 					<key>MaxTouchEndDelta</key>
@@ -1021,11 +1021,11 @@
 						<key>ELANv3</key>
 						<integer>10</integer>
 						<key>ELANv4</key>
-						<integer>10</integer>
+						<integer>7</integer>
 						<key>ELANv4ClickPad</key>
-						<integer>10</integer>
+						<integer>7</integer>
 						<key>FocalTech</key>
-						<integer>10</integer>
+						<integer>7</integer>
 						<key>Synaptics</key>
 						<integer>9</integer>
 						<key>SynapticsClickPad</key>
@@ -1038,11 +1038,11 @@
 					<key>PinchRotateMinSamples</key>
 					<integer>3</integer>
 					<key>PinchZoom</key>
-					<true/>
+					<false/>
 					<key>PinchZoomDelta</key>
 					<integer>300</integer>
 					<key>Rotation</key>
-					<true/>
+					<false/>
 					<key>RotationDelta</key>
 					<integer>350</integer>
 					<key>RotationMaxCFingDelta</key>
@@ -1159,9 +1159,9 @@
 							<key>ELANv3</key>
 							<integer>25</integer>
 							<key>ELANv4</key>
-							<integer>20</integer>
+							<integer>100</integer>
 							<key>ELANv4ClickPad</key>
-							<integer>15</integer>
+							<integer>100</integer>
 							<key>FocalTech</key>
 							<integer>15</integer>
 							<key>Synaptics</key>
@@ -1224,7 +1224,7 @@
 						<key>EdgeScrollAccelMode</key>
 						<integer>0</integer>
 						<key>EdgeScrolling</key>
-						<true/>
+						<false/>
 						<key>EdgeVScrollAdaptArea</key>
 						<integer>4</integer>
 						<key>EdgeVScrollArea</key>
@@ -1251,7 +1251,7 @@
 						<key>ELANv4</key>
 						<integer>5</integer>
 						<key>ELANv4ClickPad</key>
-						<integer>5</integer>
+						<integer>10</integer>
 						<key>FocalTech</key>
 						<integer>5</integer>
 						<key>Synaptics</key>
@@ -1276,7 +1276,7 @@
 						<key>ELANv3</key>
 						<integer>300</integer>
 						<key>ELANv4</key>
-						<integer>400</integer>
+						<integer>320</integer>
 						<key>FocalTech</key>
 						<integer>400</integer>
 						<key>MouseMode</key>
@@ -1296,11 +1296,11 @@
 				<key>Swiping</key>
 				<dict>
 					<key>3FingerSwipeDownAction</key>
-					<integer>1</integer>
+					<integer>10</integer>
 					<key>3FingerSwipeLeftAction</key>
-					<integer>11</integer>
+					<integer>7</integer>
 					<key>3FingerSwipeRightAction</key>
-					<integer>12</integer>
+					<integer>6</integer>
 					<key>3FingerSwipeUpAction</key>
 					<integer>3</integer>
 					<key>3FingerSwipes</key>
@@ -1308,9 +1308,9 @@
 					<key>4FingerSwipeDownAction</key>
 					<integer>9</integer>
 					<key>4FingerSwipeLeftAction</key>
-					<integer>16</integer>
+					<integer>17</integer>
 					<key>4FingerSwipeRightAction</key>
-					<integer>15</integer>
+					<integer>17</integer>
 					<key>4FingerSwipeUpAction</key>
 					<integer>2</integer>
 					<key>4FingerSwipes</key>
@@ -1334,9 +1334,9 @@
 					<key>EdgeSwipeTop</key>
 					<integer>10</integer>
 					<key>EdgeSwipes</key>
-					<true/>
+					<false/>
 					<key>EdgeSwipes2Ways</key>
-					<true/>
+					<false/>
 					<key>EdgeSwipesResetPointer</key>
 					<true/>
 					<key>MultiFingerSwipesDeltaX</key>
@@ -1347,9 +1347,9 @@
 				<key>Tapping</key>
 				<dict>
 					<key>12TapTimeOut</key>
-					<integer>180</integer>
+					<integer>200</integer>
 					<key>1FClickTimeOut</key>
-					<integer>140</integer>
+					<integer>125</integer>
 					<key>1FTapPressure</key>
 					<dict>
 						<key>ELANv2</key>
@@ -1357,7 +1357,7 @@
 						<key>ELANv3</key>
 						<integer>35</integer>
 						<key>ELANv4</key>
-						<integer>35</integer>
+						<integer>20</integer>
 						<key>ELANv4ClickPad</key>
 						<integer>20</integer>
 						<key>FocalTech</key>
@@ -1378,23 +1378,23 @@
 					<key>5FingersTapAction</key>
 					<integer>5</integer>
 					<key>CornerTapAreaHeight</key>
-					<integer>10</integer>
+					<integer>0</integer>
 					<key>CornerTapAreaLength</key>
-					<integer>10</integer>
+					<integer>0</integer>
 					<key>CornerTapStartABS</key>
-					<true/>
-					<key>DisableBottomCornersTap</key>
 					<false/>
+					<key>DisableBottomCornersTap</key>
+					<true/>
 					<key>Enable</key>
 					<true/>
 					<key>MulFingDoubleTaps</key>
 					<false/>
 					<key>MulFingTapMaxDelta</key>
-					<integer>55</integer>
+					<integer>80</integer>
 					<key>MulFingTapTimeOut</key>
-					<integer>200</integer>
+					<integer>300</integer>
 					<key>TapMaxDelta</key>
-					<integer>100</integer>
+					<integer>80</integer>
 					<key>TrackpadTappingCorners</key>
 					<false/>
 				</dict>
