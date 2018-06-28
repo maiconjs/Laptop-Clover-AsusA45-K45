@@ -217,6 +217,10 @@
 		</array>
 		<key>FixHeaders</key>
 		<false/>
+		<key>FixMCFG</key>
+		<false/>
+		<key>HaltEnabler</key>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -243,9 +247,11 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-v kext-dev-mode=1</string>
+		<string>-v darkwake=1 kext-dev-mode=1</string>
+		<key>NeverDoRecovery</key>
+		<false/>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -512,9 +518,9 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>
@@ -522,11 +528,11 @@
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
 		<key>KernelLapic</key>
-		<true/>
-		<key>KernelPm</key>
-		<true/>
-		<key>KernelXCPM</key>
 		<false/>
+		<key>KernelPm</key>
+		<false/>
+		<key>KernelXCPM</key>
+		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -583,6 +589,25 @@
 				BAYAAAAIAAAGAAAA
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix Bluetooth 30 seconds delay patch
+</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				D4UHAQ==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>IOBluetoothHostControllerUSBTransport</string>
+				<key>Replace</key>
+				<data>
+				D4QHAQ==
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -591,18 +616,66 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>
+		kePqx6P6
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>04/09/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP91.88Z.00DA.B00.1804091930</string>
+		<key>Board-ID</key>
+		<string>Mac-6F01561E16C75D06</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C023421004NDJWK1F</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x0A</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xC00DE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<true/>
+		<key>PlatformFeature</key>
+		<string>0xFFFF</string>
 		<key>ProductName</key>
 		<string>MacBookPro9,2</string>
+		<key>SerialNumber</key>
+		<string>C02LL1SODTY3</string>
 		<key>Trust</key>
 		<true/>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>6491FD75-1217-5AC1-BE18-4744397B8203</string>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
+		<key>InjectSystemID</key>
+		<false/>
 	</dict>
 </dict>
 </plist>
