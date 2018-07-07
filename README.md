@@ -10,6 +10,7 @@ Clover with fixes for Asus A45 and K45
 * Kexts for Wifi Atheros AR9285 and Bluetooth AR3011
 
 Install all kexts contained in Other folder, in the directory /Library/Extensions/. You can use the KCPM Utility Pro, which can be downloaded at this link:
+
 https://www.firewolf.science/2016/09/kcpm-utility-pro-v6-brand-new-kexts-ezinstaller-macos-sierra-supported-repairing-permissions-configuring-rootless-and-more/
 
 
