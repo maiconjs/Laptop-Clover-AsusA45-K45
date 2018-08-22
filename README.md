@@ -1,7 +1,7 @@
 # Laptop-Clover-AsusA45-K45
 Clover with fixes for Asus A45 and K45
 
-* Mic Fixed Witch my build AppleALC + Lilu.
+* Realtek ALC 269VB (Int Speaker, Headphone, Mic Int and Line-in fixed by me), with layout-id: 45 (Thanks @vandroiy2013, @vit9696 and @Acidanthera for AppleALC and Lilu)
 * Full PowerManagment with XCPM
 * USB Fixeds
 * Sleep
