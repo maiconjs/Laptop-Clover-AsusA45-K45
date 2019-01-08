@@ -140,25 +140,25 @@
 			<key>Fn keys Layout</key>
 			<string>NONE</string>
 			<key>Fn keys Mode</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>IOClass</key>
 			<string>ApplePS2Keyboard</string>
 			<key>IOProviderClass</key>
 			<string>ApplePS2KeyboardDevice</string>
 			<key>Keyboard type (ID)</key>
-			<integer>0</integer>
+			<integer>51</integer>
 			<key>Preferences</key>
 			<dict>
 				<key>Disable Num Lock LED</key>
 				<false/>
 				<key>Enable Extended Functions</key>
-				<true/>
+				<false/>
 				<key>Enable Sierra Caps Lock Fix</key>
 				<true/>
 				<key>FinerFnBrightnessControl</key>
-				<true/>
+				<false/>
 				<key>FinerFnVolumeControl</key>
-				<true/>
+				<false/>
 				<key>Make Caps Lock into key</key>
 				<integer>0</integer>
 				<key>Make ISO keypad key . to ,</key>
@@ -174,7 +174,7 @@
 				<key>Make right control into key</key>
 				<integer>0</integer>
 				<key>Make shift + caps into Fn key</key>
-				<true/>
+				<false/>
 				<key>Num Lock enabled at boot</key>
 				<false/>
 				<key>Swap alt and windows key</key>
@@ -183,7 +183,7 @@
 			<key>ProductID</key>
 			<integer>782</integer>
 			<key>Use ISO Layout</key>
-			<false/>
+			<true/>
 			<key>VendorID</key>
 			<integer>1452</integer>
 		</dict>

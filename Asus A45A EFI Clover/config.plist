@@ -114,7 +114,7 @@
 					<key>Comment</key>
 					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					X09TSQ==
@@ -436,7 +436,7 @@
 					<key>Comment</key>
 					<string>change Method(XWAK,0,S) to ZWAK, pair with SSDT-XWAK.aml</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					WFdBSwg=
@@ -558,13 +558,13 @@
 		<key>FixMCFG</key>
 		<true/>
 		<key>HaltEnabler</key>
-		<false/>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DoubleFirstState</key>
 			<false/>
 			<key>DropOem</key>
-			<true/>
+			<false/>
 			<key>EnableC2</key>
 			<false/>
 			<key>EnableC4</key>
@@ -587,7 +587,7 @@
 				<false/>
 			</dict>
 			<key>NoOemTableId</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>Boot</key>
@@ -595,7 +595,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-v darkwake=1 kext-dev-mode=1</string>
+		<string>-v</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -609,7 +609,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -645,14 +645,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>layout-id=2</string>
+				<string>layout-id=3</string>
 				<key>Device</key>
 				<string>HDA</string>
 				<key>Key</key>
 				<string>layout-id</string>
 				<key>Value</key>
 				<data>
-				AgAAAA==
+				AwAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -779,10 +779,12 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<string>Detect</string>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -858,17 +860,8 @@
 	<dict>
 		<key>EDID</key>
 		<dict>
-			<key>Custom</key>
-			<data>
-			AP///////wAGEHycAAAAAAoWAQOAHxF4Cg1FnVpVliYaUFQAAAAB
-			AQEBAQEBAQEBAQEBAQEBWBtWflAADjAkMDUANa4QAAAZAAAAAAAA
-			AAAAAAAAAAAAAAAAAAAA/gBMRyBEaXNwbGF5CiAgAAAA/gBMUDE0
-			MFdINC1UTEMxANw=
-			</data>
 			<key>Inject</key>
-			<true/>
-			<key>ProductID</key>
-			<string>0x9C7C</string>
+			<false/>
 		</dict>
 		<key>Inject</key>
 		<dict>
@@ -885,9 +878,9 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>
@@ -895,11 +888,11 @@
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
 		<key>KernelLapic</key>
-		<true/>
-		<key>KernelPm</key>
-		<true/>
-		<key>KernelXCPM</key>
 		<false/>
+		<key>KernelPm</key>
+		<false/>
+		<key>KernelXCPM</key>
+		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -958,27 +951,10 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
+				<string>Fix Bluetooth 30 seconds delay patch
+</string>
 				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RiV1VCUwNHgA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				RiV1VHh4eHgA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix Bluetooth 30 seconds delay patch</string>
-				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				D4UHAQ==
@@ -1000,16 +976,60 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<string>UseMacAddr1</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>04/09/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP91.88Z.00DA.B00.1804091930</string>
+		<key>Board-ID</key>
+		<string>Mac-6F01561E16C75D06</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C023154034NDYW3FB</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x0A</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xC00DE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<true/>
+		<key>PlatformFeature</key>
+		<string>0xFFFF</string>
 		<key>ProductName</key>
 		<string>MacBookPro9,2</string>
+		<key>SerialNumber</key>
+		<string>C02KLTIVDTY3</string>
 		<key>Trust</key>
 		<true/>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>6491FD75-1217-5AC1-BE18-4744397B8203</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
